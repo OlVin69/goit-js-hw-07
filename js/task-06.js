@@ -31,7 +31,7 @@ function createBoxes(amount) {
 };
   
 function handleCreate() {
-  
+  destroyBoxes();
     const amount = Number(inputEl.value);
     createBoxes(amount);
     inputEl.value = '';
