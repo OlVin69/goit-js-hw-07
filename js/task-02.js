@@ -28,13 +28,13 @@ const images = [
   },
 ];
 
-const listImages = document.querySelector(".gallery");
+const listImages = document.querySelector("ul.gallery");
 
 function createMarkup(array) {
   return array
     .map(
       (element) => `<li>
-       <img src="${element.url}" alt="${element.alt}" width="400" height="300">
+       <img src="${element.url}" alt="${element.alt}" width="360" height="300">
        </li>`
     ).join("");
 }
